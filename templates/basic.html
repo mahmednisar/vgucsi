@@ -1,0 +1,146 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="500x500" href="{% static 'img/cst.bmp' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome-all.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome5-overrides.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arizonia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Artifika">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|PT+Serif|PT+Serif+Caption&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Lobster|Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/jamja_get_code_introduction.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/smoothproducts.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Social-Icons.css'%}">
+    <link rel=”stylesheet” type="text/css" href="{% static 'css/base.css' %}">
+    <title>{% block title%} {% endblock %}</title>
+    <style>
+        {% block css %}
+        
+        {% endblock %}
+    </style>
+  
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark " id="mainNav" style="background-color: rgb(245, 243, 243); ">
+            <div class="container  " ><a class="navbar-brand" data-bs-hover-animate="pulse" href="/"  style="color: rgb(244,243,238); font-family: 'PT Serif', serif;" target="_top"><img class="rounded-circle" src="{% static 'img/cst.bmp' %}"style="width: 50px;">&nbsp;
+                <span style="color: rgb(128, 28, 158)" >Computer </span><span style="color: rgb(57, 66, 199)" >Sociey for  </span> <span style="color: rgb(228, 141, 11)" >Technocrats</span></a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family: 'PT Serif Caption', serif;">
+                    <ul class="nav navbar-nav ml-auto ">
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="pulse" href="/">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="pulse" href="/events/">Events</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="pulse" href="/blog/">Blog</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="pulse" href="/team/">Our team</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="pulse" href="http://vgu.ac.in/clubs.php " target="_blank ">Other Clubs</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="pulse" href="http://vgu.ac.in/ " target="_blank ">VGU</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="pulse" href="/contact/">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {% block body %}{{% endblock %}
+
+
+
+
+
+
+
+    <footer>
+        <div class="p-2 mb-0 bg-secondary text-white my-5 ">
+            <div class="row mt-4 ml-3 mr-3">
+                <div class="col-md-3  ">
+                    <h4>Suggested Sites</h4>
+                    <a class="btn btn-secondary " href="https://mnisarahmed.github.io/pw/ " target="_blank " role="button ">Programmers Wiki &raquo;</a>
+
+                </div>
+                <div class="col-md-3 ">
+                    <h4>About us</h4>
+
+                    <a class="btn btn-secondary " target="_blank " role="button " href="/team">Our Teams &raquo;</a>
+                    <a class="btn btn-secondary " target="_blank " role="button " href="/contact/">Contact us &raquo;</a>
+                    <a class="btn btn-secondary " target="_blank " role="button " href="/admin/">Admin Login &raquo;</a>
+                    
+                </div>
+                <div class="col-md-3 ">
+                    <h4>Important Links</h4>
+
+                    
+                    <a class="btn btn-secondary " role="button " data-bs-hover-animate="pulse " href="https://vgu.ac.in " target="_blank ">VGU &raquo;</a>
+                    <a class="btn btn-secondary " role="button " data-bs-hover-animate="pulse " href="https://www.tcsion.com/SelfServices/ " target="_blank ">Student ERP Login &raquo;</a>
+                    <a class="btn btn-secondary " role="button " data-bs-hover-animate="pulse " href="https://g01.tcsion.com//per/g01/pub/1346/SelfServices/templates/Webtop%20Login%20Page20072018023420/Webtop%20Login%20Page/Webtop%20Login%20Page020072018023509.html
+                        " target="_blank ">Faculty ERP Login &raquo;</a>
+                    <a class="btn btn-secondary " role="button " data-bs-hover-animate="pulse " href="http://studentportal.csidiscoverthinking.com/index.php " target="_blank ">CSI Login &raquo;</a>
+
+                </div>
+                <div class="col-md-3 ">
+                    <h4 class="text-left ">Follow Us</h4><a class="btn btn-outline-light btn-social text-center rounded-circle " role="button " data-bs-hover-animate="pulse " href="https://www.linkedin.com/company/vgucsi/ " style="margin: 10px;width:
+                        50px;height: 50px; " target="_blank "><i class="fa fa-linkedin-square fa-fw " style="margin-top: 7px;margin-left: 3px;margin-bottom: 10px;margin-right: 10px;width: 20px;height: 20px;font-size: 25px; "></i></a>
+                    <a class="btn btn-outline-light btn-social text-center rounded-circle " role="button " data-bs-hover-animate="pulse " href="https://www.instagram.com/csivgu/" style="margin: 10px;width: 50px;height: 50px; " target="_blank "><i class="fa
+                        fa-instagram fa-fw " style="margin-top: 7px;margin-left: 3px;margin-bottom: 10px;margin-right: 10px;width: 20px;height: 20px;font-size: 25px; "></i></a><a class="btn btn-outline-light btn-social text-center rounded-circle "
+                        role="button " data-bs-hover-animate="pulse " href="https://www.facebook.com/vgucsi" style="margin: 10px;width: 50px;height: 50px; " target="_blank "><i class="fa fa-facebook-official fa-fw " style="margin-top: 7px;margin-left:
+                        3px;margin-bottom: 10px;margin-right: 10px;width: 20px;height: 20px;font-size: 25px; "></i></a>
+                    <a class="btn btn-outline-light btn-social text-center rounded-circle " role="button " data-bs-hover-animate="pulse " href="https://chat.whatsapp.com/6xHymvrMyWbHDh148Msr4L " style="margin: 10px;width: 50px;height: 50px;
+                        " target="_blank "><i class="fa fa-whatsapp fa-fw " style="margin-top: 7px;margin-left: 3px;margin-bottom: 10px;margin-right: 10px;width: 20px;height: 20px;font-size: 25px; "></i></a>
+                </div>
+            </div>
+            <hr class="featurette-divider ">
+            <div class="footer-copyright ">
+                <p class="rubberBand animated " style=" text-align: center; ">Copyright &nbsp;© 2019 VGUCSI</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js " integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js " integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js " integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k " crossorigin="anonymous "></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js'%}"></script>
+    <script src="{% static 'js/charming.min.js'%}"></script>
+    <script src="{% static 'js/TweenMax.min.js'%}"></script>
+    <script src="{% static 'js/demo.js'%}"></script>
+    {% block js %} {% endblock %}
+</body>
+
+</html>

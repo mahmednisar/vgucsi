@@ -1,0 +1,31 @@
+{% extends 'basic.html' %}
+{% block body %}
+
+<div class="block-heading bg-dark pt-2 pb-2"  style="margin-top: 4.8em; font-family: 'PT Serif Caption', serif; ">
+    <h2 class=" rubberBand animated"style=" font-size: 52px; color:rgb(241, 235, 235); text-align: center;">Blogs</h2>
+</div>
+<div class="container">
+    <div class="card-deck my-3">
+            {% for i in myposts %}
+      <div class="card">
+        <img src="/media/{{i.thumbnail}}" class="card-img-top" alt="{{i.title}}">
+        <div class="card-body">
+          <h4 class="card-title" style=" text-align: center;">{{i.title}}</h4><h6 class="card-title" style=" text-align: center;">{{i.sub_head| slice:"0:100"}}...</h6>
+           <p class="card-text">Publish Date: <small class="text-muted">{{i.pub_date}}</small></p>
+          <p class="card-text">{{i.content|slice:"0:200"}}...</p>
+           
+          <div  style=" text-align: center;" > <a href="/blogpost/{{i.post_id}}"><button class="btn btn-primary border rounded-circle" type="button"  >Details</button></a> </div>
+ 
+        </div>
+      </div>
+    {% if forloop.counter|divisibleby:3 %}
+        </div><div class="card-deck my-3">
+        {% endif %}
+    
+        {% endfor %}
+    </div>
+    </div>
+    </div>
+{% block footer %}
+{% endblock %}
+{% endblock %}

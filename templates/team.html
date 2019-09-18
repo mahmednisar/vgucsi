@@ -1,0 +1,70 @@
+{% extends 'basic.html' %}
+
+
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+
+   a, a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+</style>
+
+{% block body %}
+{% load static%}
+
+<div class="block-heading pt-2  bg-dark pb-2"  style="margin-top: 4.9rem; font-family: 'PT Serif Caption', serif; background-color:rgb(92, 88, 88);">
+        <h2 class=" rubberBand animated"style=" font-size: 52px; color:rgb(241, 235, 235); text-align: center;">Our Team</h2>
+    </div>
+              <div class="container">
+<div class="       row my-2  ">
+    {% for item in myteam %}
+  <div class="      col-lg-4 " style="border: double; border-radius: 25px;">
+    <img class="my-3 " style="display: block; margin-left: auto; margin-right: auto; border-radius:2em" src="/media/{{item.member_image}}" style="vertical-align: middle;" width="200" height="250" >
+    <a href="{{item.member_url}}"><h2 style="text-align: center; color: rgb(134,142,150);font-family: 'Lobster', cursive;">{{item.member_name}}</h2></a>
+    <p style="text-align: center; font-family: 'Saira Stencil One', cursive;">{{item.member_class}}</p>
+    <p style="text-align: center; font-family: 'Libre Baskerville', serif;">CSI ID: {{item.csi}}</p>
+
+        <div class=" col-lg-12 text-center mt-2 my-1 mx-2 mb-3">
+            <a class="btn btn-light border rounded-circle mb-2 mb-2" role="button" data-bs-hover-animate="pulse" style="width: 60px;height: 60px;margin: 0px 10px;" href="https://www.linkedin.com/in/{{item.ln}}" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 32px;color: rgb(117,121,128);margin-top: 6px;"></i></a>
+            <a class="btn btn-light border rounded-circle mb-2" role="button" data-bs-hover-animate="pulse" style="width: 60px;height: 60px;margin: 0px 10px;" href="https://www.instagram.com/{{item.ins}}" target="_blank"><i class="fa fa-instagram" style="font-size: 32px;color: rgb(117,121,128);margin-top: 6px;"></i></a>
+            <a class="btn btn-light border rounded-circle mb-2" role="button" data-bs-hover-animate="pulse" style="width: 60px;height: 60px;margin: 0px 10px;" href="https://api.whatsapp.com/send?phone={{item.whatsapp}}&text=Hi!%20{{item.member_name}}" target="_blank"><i class="fa fa-whatsapp" style="font-size: 32px;color: rgb(117,121,128);margin-top: 6px;"></i></a>
+            <a class="btn btn-light border rounded-circle mb-2" role="button" data-bs-hover-animate="pulse" style="width: 60px;height: 60px;margin: 0px 10px;" href="mailto:{{item.mail}}" target="_blank"><i class="fas fa-mail-bulk" style="font-size: 32px;color: rgb(117,121,128);margin-top: 6px;"></i></a></div>
+
+            </div>
+
+
+
+  
+      {% if forloop.counter|divisibleby:3 %}
+    </div><div class="        row my-2">
+    {% endif %}
+
+    {% endfor %}
+</div>
+</div>
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script src="assets/js/smoothproducts.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/bs-animation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,279 @@
+[2019-09-14 13:58:35 +0000] [17575] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/vgucsi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/vgucsi/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: vgucsi.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fdb7903fea0>
+  on_reload: <function OnReload.on_reload at 0x7fdb78b2a048>
+  when_ready: <function WhenReady.when_ready at 0x7fdb78b2a158>
+  pre_fork: <function Prefork.pre_fork at 0x7fdb78b2a268>
+  post_fork: <function Postfork.post_fork at 0x7fdb78b2a378>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fdb78b2a488>
+  worker_int: <function WorkerInt.worker_int at 0x7fdb78b2a598>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fdb78b2a6a8>
+  pre_exec: <function PreExec.pre_exec at 0x7fdb78b2a7b8>
+  pre_request: <function PreRequest.pre_request at 0x7fdb78b2a8c8>
+  post_request: <function PostRequest.post_request at 0x7fdb78b2a950>
+  child_exit: <function ChildExit.child_exit at 0x7fdb78b2aa60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fdb78b2ab70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fdb78b2ac80>
+  on_exit: <function OnExit.on_exit at 0x7fdb78b2ad90>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-09-14 13:58:35 +0000] [17575] [INFO] Starting gunicorn 19.9.0
+[2019-09-14 13:58:35 +0000] [17575] [DEBUG] Arbiter booted
+[2019-09-14 13:58:35 +0000] [17575] [INFO] Listening at: http://127.0.0.1:8000 (17575)
+[2019-09-14 13:58:35 +0000] [17575] [INFO] Using worker: sync
+[2019-09-14 13:58:35 +0000] [17578] [INFO] Booting worker with pid: 17578
+[2019-09-14 13:58:35 +0000] [17580] [INFO] Booting worker with pid: 17580
+[2019-09-14 13:58:35 +0000] [17581] [INFO] Booting worker with pid: 17581
+[2019-09-14 13:58:35 +0000] [17575] [DEBUG] 3 workers
+[2019-09-14 14:00:48 +0000] [17589] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/vgucsi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/vgucsi/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: vgucsi.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fbb3b71bea0>
+  on_reload: <function OnReload.on_reload at 0x7fbb3b206048>
+  when_ready: <function WhenReady.when_ready at 0x7fbb3b206158>
+  pre_fork: <function Prefork.pre_fork at 0x7fbb3b206268>
+  post_fork: <function Postfork.post_fork at 0x7fbb3b206378>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fbb3b206488>
+  worker_int: <function WorkerInt.worker_int at 0x7fbb3b206598>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fbb3b2066a8>
+  pre_exec: <function PreExec.pre_exec at 0x7fbb3b2067b8>
+  pre_request: <function PreRequest.pre_request at 0x7fbb3b2068c8>
+  post_request: <function PostRequest.post_request at 0x7fbb3b206950>
+  child_exit: <function ChildExit.child_exit at 0x7fbb3b206a60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fbb3b206b70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fbb3b206c80>
+  on_exit: <function OnExit.on_exit at 0x7fbb3b206d90>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-09-14 14:00:48 +0000] [17589] [INFO] Starting gunicorn 19.9.0
+[2019-09-14 14:00:48 +0000] [17589] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2019-09-14 14:00:48 +0000] [17589] [DEBUG] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2019-09-14 14:00:48 +0000] [17589] [ERROR] Retrying in 1 second.
+[2019-09-14 14:00:49 +0000] [17589] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2019-09-14 14:00:49 +0000] [17589] [DEBUG] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2019-09-14 14:00:49 +0000] [17589] [ERROR] Retrying in 1 second.
+[2019-09-14 14:00:50 +0000] [17589] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2019-09-14 14:00:50 +0000] [17589] [DEBUG] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2019-09-14 14:00:50 +0000] [17589] [ERROR] Retrying in 1 second.
+[2019-09-14 14:00:51 +0000] [17589] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2019-09-14 14:00:51 +0000] [17589] [DEBUG] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2019-09-14 14:00:51 +0000] [17589] [ERROR] Retrying in 1 second.
+[2019-09-14 14:00:52 +0000] [17589] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2019-09-14 14:00:52 +0000] [17589] [DEBUG] connection to ('127.0.0.1', 8000) failed: [Errno 98] Address already in use
+[2019-09-14 14:00:52 +0000] [17589] [ERROR] Retrying in 1 second.
+[2019-09-14 14:00:53 +0000] [17589] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2019-09-14 14:23:56 +0000] [18519] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/vgucsi
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/vgucsi/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: vgucsi.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7efe958a6ea0>
+  on_reload: <function OnReload.on_reload at 0x7efe95391048>
+  when_ready: <function WhenReady.when_ready at 0x7efe95391158>
+  pre_fork: <function Prefork.pre_fork at 0x7efe95391268>
+  post_fork: <function Postfork.post_fork at 0x7efe95391378>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7efe95391488>
+  worker_int: <function WorkerInt.worker_int at 0x7efe95391598>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7efe953916a8>
+  pre_exec: <function PreExec.pre_exec at 0x7efe953917b8>
+  pre_request: <function PreRequest.pre_request at 0x7efe953918c8>
+  post_request: <function PostRequest.post_request at 0x7efe95391950>
+  child_exit: <function ChildExit.child_exit at 0x7efe95391a60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7efe95391b70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7efe95391c80>
+  on_exit: <function OnExit.on_exit at 0x7efe95391d90>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-09-14 14:23:56 +0000] [18519] [INFO] Starting gunicorn 19.9.0
+[2019-09-14 14:23:56 +0000] [18519] [DEBUG] Arbiter booted
+[2019-09-14 14:23:56 +0000] [18519] [INFO] Listening at: http://127.0.0.1:8000 (18519)
+[2019-09-14 14:23:56 +0000] [18519] [INFO] Using worker: sync
+[2019-09-14 14:23:56 +0000] [18522] [INFO] Booting worker with pid: 18522
+[2019-09-14 14:23:56 +0000] [18523] [INFO] Booting worker with pid: 18523
+[2019-09-14 14:23:56 +0000] [18524] [INFO] Booting worker with pid: 18524
+[2019-09-14 14:23:56 +0000] [18519] [DEBUG] 3 workers
